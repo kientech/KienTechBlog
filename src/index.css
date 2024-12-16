@@ -1,0 +1,22 @@
+@import "prismjs/themes/prism.css"; 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+body{
+  background-color: #f8f9f8;
+  font-family: "Poppins", serif;
+}
+
+pre {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #eeeef0;
+}
