@@ -28,6 +28,7 @@ import AdminSidebar from "./pages/AdminPages/AdminSidebar";
 import UserManagement from "./pages/AdminPages/UserManagement";
 import ContactPage from "./pages/ContactPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import ArduinoProjects from "./pages/ArduinoProjects";
 
 // User Layout
 function UserLayout({ toggleTheme, theme }) {
@@ -123,6 +124,7 @@ function App() {
         <Route path="/blogs/:slug" element={<DetailPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/arduino-projects" element={<ArduinoProjects />} />
       </Route>
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />

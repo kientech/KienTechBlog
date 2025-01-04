@@ -25,8 +25,8 @@ function Footer() {
     }
   };
   return (
-    <div className="w-full bg-white dark:bg-[#161617] rounded-lg">
-      <div className="grid grid-cols-3 gap-5 ">
+    <div className="w-full bg-white dark:bg-[#161617] rounded-lg p-4">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-5 ">
         <div className="w-full bg-blue-100 dark:bg-[#1a1c2d] p-4 rounded-lg">
           <img
             src="https://demo.tmrwstudio.net/atlas/default/wp-content/uploads/sites/2/2023/10/atlas.png"

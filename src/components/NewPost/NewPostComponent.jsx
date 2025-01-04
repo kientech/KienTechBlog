@@ -2,10 +2,10 @@ import React from "react";
 
 function NewPostComponent() {
   return (
-    <div className="flex gap-5 items-center justify-between w-full h-[540px]">
-      <div className="w-1/4 h-full flex flex-col gap-y-4">
+    <div className="p-2 flex md:flex-row flex-col gap-5 md:items-center justify-between w-full md:h-[540px] h-full">
+      <div className="w-full md:w-1/4 h-full flex md:flex-col flex-col gap-y-4">
         {[1, 2].map((item) => (
-          <div className="group w-full h-2/4 rounded-xl overflow-hidden relative">
+          <div className="group w-full md:h-2/4 h-[200px] rounded-xl overflow-hidden relative">
             <img
               src="https://cdn.dribbble.com/userupload/4005869/file/original-ad5ae66db7ad979d6b2d6cd452084bee.jpg?resize=1504x1074&vertical=center"
               className="w-full h-full rounded-xl object-cover group-hover:scale-105 transition-all"
@@ -30,7 +30,7 @@ function NewPostComponent() {
           </div>
         ))}
       </div>
-      <div className="w-2/4 h-full">
+      <div className="md:w-2/4 w-full h-full">
         <div className="group w-full h-full rounded-xl overflow-hidden relative">
           <img
             src="https://cdn.dribbble.com/userupload/12402324/file/original-74d9a28a6dd1c99c8dbd934817920892.png?resize=2048x1536&vertical=center"
@@ -55,7 +55,7 @@ function NewPostComponent() {
           </div>
         </div>
       </div>
-      <div className="w-1/4 h-full flex flex-col gap-y-4">
+      <div className="md:w-1/4 w-full h-full flex-col gap-y-4 hidden md:flex">
         {[1, 2].map((item) => (
           <div className="group w-full h-2/4 rounded-xl overflow-hidden relative">
             <img

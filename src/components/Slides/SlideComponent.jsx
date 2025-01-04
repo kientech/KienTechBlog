@@ -12,7 +12,7 @@ function SlideComponent() {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={2}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,

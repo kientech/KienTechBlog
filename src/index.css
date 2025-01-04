@@ -13,6 +13,10 @@ body{
   font-family: "Poppins", serif;
 }
 
+.tox-edit-area__iframe {
+  font-family: "Poppins", serif !important;
+}
+
 pre {
   width: 100%;
   height: auto;

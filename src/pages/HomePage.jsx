@@ -20,8 +20,8 @@ function HomePage() {
       <div>
         <NewPostComponent />
       </div>
-      <div className="flex gap-x-8 mt-12">
-        <div className="w-[70%]">
+      <div className="flex md:flex-row flex-col gap-x-8 md:mt-12 mt-10 m-2">
+        <div className="md:w-[70%] w-full">
           <div>
             <div className="flex items-center justify-between">
               <h1 className="font-semibold text-black text-lg dark:text-white">
@@ -36,8 +36,8 @@ function HomePage() {
                 </span>
               </div>
             </div>
-            <div className="w-full h-[500px] my-4 flex gap-x-5">
-              <div className="w-2/4 h-full relative">
+            <div className="w-full h-[500px] my-4 flex md:flex-row flex-col gap-x-5">
+              <div className="md:w-2/4 w-full h-full relative">
                 <div className="group w-full h-full rounded-xl overflow-hidden">
                   <img
                     src="https://cdn.dribbble.com/userupload/17576664/file/original-55a0466c68a41a29f48707fedd1a0fce.png?resize=2048x1536&vertical=center"
@@ -63,10 +63,10 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="w-2/4 flex flex-col justify-between px-4 py-2 bg-white dark:bg-[#161617] rounded-lg overflow-hidden">
+              <div className="md:w-2/4 w-full h-full flex flex-col justify-between px-4 py-2 bg-white dark:bg-[#161617] rounded-lg md:overflow-hidden overflow-auto my-4 md:my-0">
                 {[1, 2, 3, 4, 5].map((item) => (
                   <div key={item} className="flex w-full items-center gap-2">
-                    <div className="group w-[120px] h-[90px] rounded-lg overflow-hidden">
+                    <div className="group w-[120px] h-[90px] rounded-lg overflow-hidden my-2  ">
                       <img
                         src="https://cdn.dribbble.com/userupload/17576664/file/original-55a0466c68a41a29f48707fedd1a0fce.png?resize=2048x1536&vertical=center"
                         alt=""
@@ -86,7 +86,7 @@ function HomePage() {
               </div>
             </div>
           </div>
-          <div className="w-full bg-white dark:bg-[#161617] p-4 rounded-lg my-8">
+          <div className="w-full bg-white dark:bg-[#161617] p-4 rounded-lg my-8 ">
             <div className="flex items-center justify-between">
               <h1 className="font-semibold text-black text-lg dark:text-white">
                 Latest
@@ -97,7 +97,7 @@ function HomePage() {
               {[1, 2, 3, 4, 5].map((item) => (
                 <div
                   key={item}
-                  className="flex items-center w-full h-[240px] gap-x-5"
+                  className="flex items-center md:flex-row flex-col w-full md:h-[240px] h-full gap-x-5"
                 >
                   <div className="group w-full h-full rounded-xl overflow-hidden">
                     <img
@@ -106,9 +106,9 @@ function HomePage() {
                       className="block w-full h-full rounded-xl object-cover group-hover:scale-105 transition-all"
                     />
                   </div>
-                  <div>
+                  <div className="md:p-0 p-4">
                     <span className="uppercase text-blue-500">Style</span>
-                    <h1 className="my-2 text-black font-semibold text-lg dark:text-white">
+                    <h1 className="my-2 text-black font-semibold md:text-lg text-md dark:text-white">
                       Winter Dressing Tips When It’s Really Cold Out
                     </h1>
                     <p className="font-base text-sm my-2">
@@ -156,7 +156,7 @@ function HomePage() {
               <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={20}
-                slidesPerView={3}
+                slidesPerView={2}
                 autoplay={{
                   delay: 3000,
                   disableOnInteraction: false,
@@ -201,7 +201,7 @@ function HomePage() {
               </Swiper>
             </div>
           </div>
-          <div className="w-full  bg-white dark:bg-[#161617] p-4 rounded-lg my-8">
+          <div className="w-full md:block hidden  bg-white dark:bg-[#161617] p-4 rounded-lg my-8">
             <div className="flex items-center justify-between">
               <h1 className="font-semibold text-black text-lg dark:text-white">
                 Latest
@@ -255,7 +255,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="w-[30%]">
+        <div className="md:w-[30%] w-full p-4">
           <SidebarComponent />
         </div>
       </div>
